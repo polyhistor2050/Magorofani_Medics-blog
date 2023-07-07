@@ -46,7 +46,11 @@ app.post("/compose", function(req, res){
   
   posts.push(input);
   res.redirect("/");
-})
+});
+app.get("/posts/:newpost", function(req, res){
+  console.log(req.params.newpost);
+});
+
 
 app.listen(3000, function() {
   console.log("Server started on port 3000")
