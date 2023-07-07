@@ -3,6 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const _ = require("lodash");
 
 const homeStartingContent = "Drug ads appear everywhere in the US, but how do highly promoted new medications stack up against other available treatments? Aside from cost including billions spent on marketing there may also be health implications.";
 const aboutContent = "Ringworm is a common, contagious skin infection caused by a fungus. Children can get it from other people who have it or from an infected animal. While it can be itchy and unpleasant, ringworm is usually harmless.";
@@ -38,6 +39,7 @@ app.get("/compose", function(req, res){
   res.render("compose");
   
 });
+
 app.post("/compose", function(req, res){
   const input = {
     title: req.body.postTitle,
@@ -47,8 +49,19 @@ app.post("/compose", function(req, res){
   posts.push(input);
   res.redirect("/");
 });
+
 app.get("/posts/:newpost", function(req, res){
-  console.log(req.params.newpost);
+  let requestedTitle = _.lowerCase(req.params.newpost);
+
+  posts.forEach((post) => {
+    let storedTitle = _.lowerCase(post.title);
+    if(storedTitle === requestedTitle){
+      console.log("Match found!");
+    }else{
+      console.log("match not found");
+    }
+  });
+
 });
 
 
