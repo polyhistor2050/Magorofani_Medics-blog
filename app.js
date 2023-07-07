@@ -22,7 +22,7 @@ app.get("/", function(req, res){
   res.render("home", 
     postUpdate = {
       StartingContent: homeStartingContent,
-      lastpost: posts
+      posts: posts
   });
 });
 

@@ -2,11 +2,7 @@
 <%- include("partials/header"); -%>
     <h1>Home</h1>
     <p> <%= StartingContent; %> </p>
-    <!-- <% lastpost.forEach(post => { %>
-        <p><% `${post}` %></p>
-   <% }) %> -->
-   <% console.log(lastpost); %>
-    <% for(let i = 0; i < lastpost.length; i++){ %>
-    <%    console.log(lastpost[i].title); %>
-    <% } %>
+    <% posts.forEach((post) => { %>
+    <%    console.log(post.title); %>
+    <% }) %>
 <%- include("partials/footer") -%>
