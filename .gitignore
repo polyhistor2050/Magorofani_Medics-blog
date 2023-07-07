@@ -1,0 +1,5 @@
+# ignoring node module
+**/node_modules
+
+#ignoring user preference file
+*.DS_Store
