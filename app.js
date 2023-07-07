@@ -20,11 +20,11 @@ app.get("/", function(req, res){
 });
 
 app.get("/about", function(req, res){
-  res.render("about", {about_Description: aboutContent})
-})
+  res.render("about", {about_Description: aboutContent});
+});
 
 app.get("/contact", function(req, res){
-  res.render("contact", {contact_Description: contactContent})
+  res.render("contact", {contact_Description: contactContent});
 });
 
 app.listen(3000, function() {
