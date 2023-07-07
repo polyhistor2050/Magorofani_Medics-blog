@@ -45,7 +45,7 @@ app.post("/compose", function(req, res){
     title: req.body.postTitle,
     body: req.body.postBody
   }
-  
+
   posts.push(input);
   res.redirect("/");
 });
@@ -55,10 +55,15 @@ app.get("/posts/:newpost", function(req, res){
 
   posts.forEach((post) => {
     let storedTitle = _.lowerCase(post.title);
+
     if(storedTitle === requestedTitle){
-      console.log("Match found!");
-    }else{
-      console.log("match not found");
+      let newPost;
+    
+      res.render("post", 
+      newPost = {
+        custom_title: requestedTitle,
+        custom_content: post.body
+      });
     }
   });
 
