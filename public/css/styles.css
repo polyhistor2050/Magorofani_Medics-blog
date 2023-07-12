@@ -29,6 +29,10 @@ font-family: 'Staatliches', cursive; -- big header*/
     color: #1abc9c;
     margin-left: 140px;
     font-family: 'Carter One', cursive;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     
 }
 .navbar-brand:hover{
@@ -102,16 +106,23 @@ img{
 
 /* Media queries */
 @media (max-width: 767px) {
+    .navbar-brand{
+        margin-left: 30px;
+        margin-bottom: 5px;
+    }
+    .nav-item{
+        text-align: center;
+    }
     .post {
         margin-bottom: 30px;
     }
 
     .post .post-title {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .post img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 }
