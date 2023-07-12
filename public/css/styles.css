@@ -37,8 +37,23 @@
 }
 
 /* Content */
+.post-space{
+    width: 70%;
+}
 .content{
     font-size: 25px;
+}
+img{
+    width: 70%;
+    height: 60vh;
+    object-fit: cover;
+    object-position:center
+}
+.post{
+    margin: 20px 0;
+}
+.post-image{
+    margin: 20px 0;
 }
 
 /* Footer Section */
