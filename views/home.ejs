@@ -1,14 +1,33 @@
 
 <%- include("partials/header"); -%>
-    <h1>Home</h1>
-    <p> <%= StartingContent %> </p>
+    <h2>Empowering Your Health Journey with Diet and Fitness</h2>
+    <p class="content">
+        Welcome to our blog, your ultimate destination for all things diet and fitness, Whether you're a health enthusiast,
+        a beginner looking to kickstart your wellness journey, or someone simply seeking practical tips to maintain a healthy lifestyle, you've come to the right place. 
+        <br>
+        <img src="https://media.istockphoto.com/id/484103777/photo/multi-ethnic-group-of-people-holding-the-word-welcome.jpg?s=612x612&w=0&k=20&c=sB3-OWo1bXd-pmsTghBreflkmW98uY0TUC99hLb-P0g=" alt="picu">  
+        <br>    
+        We believe that taking care of your body is one of the greatest investments you can make.
+        Our blog is designed to provide you with a wealth of knowledge, expert advice, and inspiring content to help you achieve your fitness goals, all from the comfort of your own home.
+        Discover a world of nutritious and delicious recipes tailored to support your health and weight management goals.
+        From mouthwatering smoothies and wholesome breakfast options to guilt-free desserts and satisfying main courses, our recipes will fuel your body and tantalize your taste buds.
+        Our fitness section is packed with effective home workout routines suitable for all fitness levels.
+        Whether you prefer cardio, strength training, yoga, or a combination of various exercises, we've got you covered.
+        Our experienced trainers will guide you through step-by-step instructions and provide helpful tips to maximize your results.
+        Beyond nutrition and exercise, we delve into the science behind healthy living, exploring topics such as sleep hygiene, stress management, and mindfulness.
+        We believe that true wellness encompasses all aspects of your life, and our aim is to empower you with the tools to achieve balance and harmony.
+        Join our vibrant community of health enthusiasts, where you can engage in discussions, share your success stories, and seek advice from fellow readers.
+        We foster a supportive and inclusive environment, welcoming individuals from all walks of life on their wellness journeys.
+        Remember, the path to a healthier you begins with small, consistent steps.
+        So, dive into our blog, explore the wealth of information available, and embark on a transformative journey towards a fitter, happier, and more vibrant you.
+        Together, let's embrace the power of diet and fitness, and unlock your true potential. Welcome to our blog, where your well-being is our top priority!
+    </p>
     
     <% posts.forEach((post) => { %>
         <h1><%= post.title %></h1>
         <p>
             <%=  post.body.substring(0, 100) + " ... " %>
                 <a href="<%= "posts/" + post.title %>">Read More</a>
-            
         </p>
         
     <% }) %>
