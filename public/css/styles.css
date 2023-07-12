@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Staatliches&display=swap');
+
+/* font-family: 'Acme', sans-serif;
+font-family: 'Staatliches', cursive; */
 /* Navbar Section */
 .container-fluid {
     padding-top: 5px;
@@ -49,11 +53,19 @@ img{
     object-fit: cover;
     object-position:center
 }
+.post-header{
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+}
 .post{
     margin: 20px 0;
 }
 .post-image{
     margin: 20px 0;
+}
+.post-title{
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
 }
   
 /*--------------------------------------------
