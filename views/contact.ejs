@@ -1,4 +1,23 @@
 <%- include ("partials/header"); -%>
-    <h1>Contact</h1>
-    <p> <%= contact_Description %> </p>
+            <div class="container-fluid">
+                <div class="row">
+                      
+                      <div class="ml-auto col-lg col-md-6 col-12">
+                          <h3 class="mb-4 pb-2">
+                            We would love to hear from you! Whether you have a question,feedback, or just want to say hello,
+                            feel free to reach out to us.We value your input and strive to provide the best experience for our readers.
+                          </h3>
+                          
+                          <form action="https://formsubmit.co/d38990fe2fe20ba7474f296b6cb03706" method="post" class="contact-form webform" role="form">
+                              <input type="text" class="form-control form-control-lg mt-4 mb-4" name="name" placeholder="Enter your Fullname" autocomplete="off" required>
+                              
+                              <input type="email" class="form-control form-control-lg mt-4 mb-4" name="email" placeholder="Enter your Email" autocomplete="off" required>
+  
+                              <textarea class="form-control form-control-lg mt-4 mb-4" rows="5" name="message" placeholder="Message"></textarea>
+                              
+                              <button class="btn btn-primary btn-lg" type="submit" id="submit-button" name="submit">Send Message</button>
+                          </form>
+                        </div>
+                 </div>
+            </div>
 <%- include ("partials/footer"); -%>

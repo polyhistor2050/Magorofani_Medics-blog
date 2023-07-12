@@ -55,8 +55,10 @@ img{
 .post-image{
     margin: 20px 0;
 }
-
-/* Footer Section */
+  
+/*--------------------------------------------
+    Footer Section
+ -------------------------------------------- */
 .footer-padding {
 	padding-bottom: 60px;
 }
