@@ -19,6 +19,7 @@ app.use(express.static("public"));
 let posts = [];
 let postUpdate;
 
+//root route
 app.get("/", function(req, res){
   res.render("home", 
     postUpdate = {
@@ -27,17 +28,29 @@ app.get("/", function(req, res){
     });
 });
 
+//diet route
+app.get("/diet", function(req, res){
+  res.render("diet");
+});
+
+//fitness route
+app.get("/fitness", function(req, res){
+  res.render("fitness");
+});
+
+//aboutus route
 app.get("/about", function(req, res){
   res.render("about", {about_Description: aboutContent});
 });
 
+//contactus route
 app.get("/contact", function(req, res){
   res.render("contact", {contact_Description: contactContent});
 });
 
+//compose route
 app.get("/compose", function(req, res){
   res.render("compose");
-  
 });
 
 app.post("/compose", function(req, res){
@@ -50,6 +63,7 @@ app.post("/compose", function(req, res){
   res.redirect("/");
 });
 
+//new post route
 app.get("/posts/:newpost", function(req, res){
   let requestedTitle = _.lowerCase(req.params.newpost);
 
