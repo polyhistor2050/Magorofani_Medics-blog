@@ -38,16 +38,20 @@ app.get("/fitness", function(req, res){
   res.render("fitness");
 });
 
-//aboutus route
+//about us route
 app.get("/about", function(req, res){
   res.render("about", {about_Description: aboutContent});
 });
 
-//contactus route
+//contact us route
 app.get("/contact", function(req, res){
   res.render("contact", {contact_Description: contactContent});
 });
 
+//acne route
+app.get("/acne", function(req, res){
+  res.render("acne");
+});
 //compose route
 app.get("/compose", function(req, res){
   res.render("compose");
