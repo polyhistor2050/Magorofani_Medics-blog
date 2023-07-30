@@ -58,6 +58,25 @@ font-family: 'Staatliches', cursive; -- big header*/
 .content{
     font-size: 25px;
 }
+.main_content{
+    margin-bottom: 50px;
+}
+.main_post{
+    width: 70%;
+    display: block;
+}
+.left-post{
+    display: inline-block;
+    width: 45%;
+    margin: 0 3px 3px 0;
+}
+.main-image{
+    width: 53%;
+    float: right;
+    margin: 15px 0 3px 3px;
+    object-fit: cover;
+    object-position:center
+}
 img{
     width: 70%;
     height: 60vh;
@@ -67,6 +86,7 @@ img{
 .post-header{
     font-family: 'Staatliches', cursive;
     font-size: 50px;
+    margin: 3rem 0 0 0;
 }
 .post{
     margin: 20px 0;
