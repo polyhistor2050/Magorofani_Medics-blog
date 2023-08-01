@@ -13,6 +13,8 @@ Our mission goes beyond simply providing diet and fitness advice. We strive to b
 With a deep-rooted belief in the transformative power of self-care, we aim to provide you with the knowledge, resources, and motivation
 to make positive changes in all aspects of your life.We believe that small,consistent steps can lead to significant transformations, and we are here to help you navigate that journey.
 
+![richandhealth](./public/assets/richandhealth.png)
+
 ## Technologies
 Project is created with:
 * Javascript
