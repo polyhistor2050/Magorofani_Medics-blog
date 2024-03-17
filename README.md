@@ -23,6 +23,7 @@ Project is created with:
 
 ## Requirement
 * Node.js
+* Npm
 * Git
 * Browser
 
